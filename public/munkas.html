@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="css/munkas.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/munkas.js"></script>
+<table>
+    <tr>
+        <td>
+<table id="orders">
+    <tr>
+        <th>Név</th>
+        <th>E-mail</th>
+        <th>Cím</th>
+        <th>Redőny Típus</th>
+        <th>Méret</th>
+        <th>Kód</th>
+    </tr>
+</table>
+        <td>
+            <h1>Beszerelés</h1>
+        <form name="acceptJob" action="/acceptOrder" method='post' id="submitAcceptOrder">
+            <table id="acceptOrder">
+                <tr>
+                    <td>
+                    <input type="text" name="munkasName" required="required" placeholder="'Kivitelező neve'.." autofocus>
+                    <input type="text" name="munkaCode" required="required" placeholder="'Megrendelés kódja'.." autofocus>
+                    </td>
+                </tr>
+                <tr>
+                    <button type="submit" name="submit" class="btn btn-primary btn-xl rounded-pill mt-5">Munka Elfogadása</button>
+                </tr>
+            </table>
+        </form>
+        </td>
+</html>

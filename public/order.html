@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5">
+                    <form name="addloser" action="/submitRequest" method='post' id="submitRequestform">
+                        <h2>Redőny rendelés</h2>
+                        <table>
+                            <tr>
+                                <td>Név</td>
+                                <td><input type="text" name="firstName" required="required" placeholder="'Tóth'.." autofocus><input type="text" name="lastName" required="required" placeholder="'Béla'.." autofocus></td>
+                            </tr>
+
+                            <tr>
+                                <td>E-mail</td>
+                                <td><input type="email" name="email" required="required" placeholder="'karalabe@gmail.com'.."></td>
+                            </tr>
+                            <tr>
+                                <td>Cím</td>
+                                <td>Város<input type="text" name="city" required="required" placeholder="'Miskolc'.."></td>
+                                <td>Utca<input type="text" name="street" required="required" placeholder="'Bulgárföld'.."></td>
+                                <td>Házszám<input type="number" name="houseNo" required="required" placeholder="'12'.."></td>
+                                <td>Irányítószám<input type="number" name="zipCode" required="required" placeholder="'3534'.."></td>
+                            </tr>
+                            <tr>
+                                <td>Redőny típus</td>
+                                <td>
+                                        <select name="shutterType" required="required">
+                                            <option value="plastic" selected>Műanyag</option>
+                                            <option value="titan">Titán</option>
+                                        </select>
+                            <tr>
+                                <td>Ablak méret</td>
+                                <td>Hossz(cm)<input type="number" name="sizeVertical" required="required" placeholder="'120'.."></td>
+                                <td>Szélesség(cm)<input type="number" name="sizeHorizontal" required="required" placeholder="'120'.."></td>
+                            </tr>
+                            </td>
+                            </tr>
+                        </table>
+                        <br>
+                        <button type="submit" name="submit" class="btn btn-primary btn-xl rounded-pill mt-5">Rendelés</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Redőny kéne mi?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</html>
